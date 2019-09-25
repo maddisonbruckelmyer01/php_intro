@@ -1,7 +1,38 @@
 <!DOCTYPE html>
 <html>
 <body>
+<head>
+<meta charset="UTF-8">
+<title>Add Couselors</title>
+</head>
+<body>
+<form action="insert.php" method="post">
+<p>
+<label for="hi">Name: </label>
+<input type="text" name="counselor" id="bye">
+</p>
+</form>
+</body>
+</head>
 
+<?php
+require_once("./resources/config.php");
+
+$result = pg_query($dbconn, "SELECT name FROM counselors");
+
+echo "<table>\n";
+while($line = pg_fetch_array($result, null, PGSQL_ASSOC)) {
+    echo "\t<tr>\n";
+    foreach($line as $col_value) {
+        echo "\t\t<td>$col_value</td>\n";
+    }
+    echo "</table>\n<br>";
+}
+
+pg_free_result($result);
+
+pg_close($dbconn);
+?>
 <?php 
 $a = 5;
 $A = 7;
@@ -16,9 +47,6 @@ function add() {
 
 add();
 
-<<<ABC
-Hello
-ABC;
 ?>
 
 <?php 
