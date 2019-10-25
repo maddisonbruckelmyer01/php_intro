@@ -13,7 +13,6 @@ Diving into PHP and learning the basics
 
 ## Built With
 - Php
-- React
 
 ## Acknowledgement
 Thanks to Prime Digital Academy for giving me the knowledge and tools to dive into this new language!
