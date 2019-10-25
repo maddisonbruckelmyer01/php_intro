@@ -1,7 +1,22 @@
 # php_intro
-set up: 
+
+## Description
+Duration: 1 week
+
+Diving into PHP and learning the basics
+
+## Installation 
 1) brew update (updates brew on your terminal)
-2) brew install php (installs php on your machine)
+2) brew install php (installs php on your terminal)
 3) php -v (will check which version you have should be 7.3.9)
-5) in the terminal of the php file run (-php -S localhost:3000) to get the server running
-6) access the server in your browser at localhost:3000!
+4) -php -S localhost:3000 (gets the server running) (in the terminal of your project)
+
+## Built With
+- Php
+- React
+
+## Acknowledgement
+Thanks to Prime Digital Academy for giving me the knowledge and tools to dive into this new language!
+
+## Support
+If you have any questions or issues, please email me at maddisonbruckelmyer01@gmail.com
